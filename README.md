@@ -8,6 +8,25 @@ An institutional-quality discounted cash flow valuation of NVIDIA Corporation, b
 
 ---
 
+## Demo: The Scenario Toggle in Action
+
+The model's centerpiece is a single dropdown (`Inputs!C3`) that switches the entire five-year forecast, WACC, and DCF between Bear / Base / Bull cases — no manual re-entry anywhere.
+
+<!-- Add a screen-recording GIF here, e.g.: -->
+<!-- ![Scenario toggle demo](assets/scenario-toggle-demo.gif) -->
+
+| Scenario | Perpetuity Method | Exit Multiple Method |
+|---|---|---|
+| Bear | $63 | $125 |
+| **Base** | **$101** | **$207** |
+| Bull | $163 | $339 |
+
+<!-- Optional: add static screenshots of the Dashboard and Sensitivity tabs, e.g.: -->
+<!-- ![Dashboard tab](assets/dashboard-screenshot.png) -->
+<!-- ![Sensitivity tables](assets/sensitivity-screenshot.png) -->
+
+---
+
 ## Why This Project
 
 Most student DCF projects stop at "here's a spreadsheet with a number in it." This one is built the way a first-year IB/ER analyst would actually be expected to build it: every assumption is sourced or explicitly justified, every formula is traceable, the model recalculates cleanly with zero errors, and the valuation is presented as a *range* driven by explicit, quantified sensitivities — not a single false-precision price target.
@@ -25,6 +44,13 @@ Most student DCF projects stop at "here's a spreadsheet with a number in it." Th
 | `NVDA_DCF_Valuation_Model.xlsx` | 10-tab Excel model — Cover, Instructions, Inputs (scenario toggle), Historical, Forecast, WACC, DCF, Sensitivity, Dashboard, Charts |
 | `NVDA_Investment_Presentation.pptx` | 12-slide investment committee-style deck: thesis, financials, DCF, sensitivity, scenarios, risks, recommendation |
 | `README.md` | This file |
+| `assets/` | *(optional)* Screenshots and the scenario-toggle demo GIF referenced above |
+
+## Quick Start
+
+1. Download `NVDA_DCF_Valuation_Model.xlsx` and open it in Excel (best fidelity) or Google Sheets/LibreOffice (formulas and formatting are standard, no macros required).
+2. Read the **Instructions** tab first — tab-by-tab guide and color legend (blue = input, black = formula, green = cross-sheet link).
+3. Go to **Inputs!C3** and flip Bear / Base / Bull to watch the model recalculate live.
 
 ## Methodology
 
@@ -39,12 +65,6 @@ Most student DCF projects stop at "here's a spreadsheet with a number in it." Th
 **5. DCF** — Both Perpetuity Growth and Exit Multiple terminal value methods, explicitly reconciled rather than averaged into a single false-precision number.
 
 **6. Sensitivity & Scenario Analysis** — Two-way data tables (WACC × terminal growth; WACC × exit multiple) plus a fully dynamic scenario toggle in the Excel model that reruns the entire five-year forecast and DCF on demand.
-
-## How to Use the Excel Model
-
-1. Open `NVDA_DCF_Valuation_Model.xlsx` and start on the **Instructions** tab for a full tab-by-tab guide and color legend (blue = input, black = formula, green = cross-sheet link).
-2. Go to **Inputs!C3** and flip the dropdown between **Bear / Base / Bull** — the Forecast, WACC, DCF, and Dashboard tabs all recalculate automatically.
-3. Check the **DCF** tab for the intrinsic value bridge under both terminal value methods, and the **Sensitivity** tab for the full two-way data tables.
 
 ## Known Limitations
 
