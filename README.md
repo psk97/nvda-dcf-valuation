@@ -29,7 +29,7 @@ The model's centerpiece is a single dropdown (`Inputs!C3`) that switches the ent
 
 ## Why This Project
 
-Most student DCF projects stop at "here's a spreadsheet with a number in it." This one is built the way a first-year IB/ER analyst would actually be expected to build it: every assumption is sourced or explicitly justified, every formula is traceable, the model recalculates cleanly with zero errors, and the valuation is presented as a *range* driven by explicit, quantified sensitivities — not a single false-precision price target.
+Most student DCF projects stop at "here's a spreadsheet with a number in it." This one is built the way a first-year IB/ER analyst would actually be expected to build it: every assumption is sourced or explicitly justified, every formula is traceable, the model recalculates cleanly with zero errors, and the valuation is presented as a *range* driven by explicit, quantified sensitivities instead of a single false-precision price target.
 
 ## Key Findings
 
