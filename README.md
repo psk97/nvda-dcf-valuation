@@ -13,7 +13,7 @@ An institutional-quality discounted cash flow valuation of NVIDIA Corporation, b
 The model's centerpiece is a single dropdown (`Inputs!C3`) that switches the entire five-year forecast, WACC, and DCF between Bear / Base / Bull cases — no manual re-entry anywhere.
 
 <!-- Add a screen-recording GIF here, e.g.: -->
-<!-- ![Scenario toggle demo](assets/scenario-toggle-demo.gif) -->
+![Scenario toggle demo](assetsscenario-toggle-demo.gif)
 
 | Scenario | Perpetuity Method | Exit Multiple Method |
 |---|---|---|
